@@ -21,4 +21,9 @@ class ClickRepository(val source: StatSource) : ClickIRepository {
         val room = RoomEntity(id = stat.id, score = stat.score, name = stat.player)
         source.delAsync(room)
     }
+
+    override fun nounStat() {
+        val room = RoomEntity(id = 2, score = 3, name = "Tom")
+        source.delAsync(room)
+    }
 }

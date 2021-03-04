@@ -6,4 +6,5 @@ interface ClickIRepository {
     fun insertStats(stat : ModelForDB)
     fun appendStats(stat : ModelForDB)
     fun delStats(stat : ModelForDB)
+    fun nounStat()
 }

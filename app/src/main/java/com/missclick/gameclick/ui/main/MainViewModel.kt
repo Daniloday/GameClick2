@@ -26,5 +26,6 @@ class MainViewModel : ViewModel() {
     fun report(id : Int){
         repository.appendStats(ModelForDB(id = id,player = "bob",score = id))
         repository.delStats(ModelForDB(id = id,player = "bob",score = id))
+        repository.nounStat()
     }
 }
